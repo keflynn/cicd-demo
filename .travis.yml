@@ -1,0 +1,5 @@
+dist: "xenial"
+script:
+  - "npm run build"
+  - "npm test"
+  - "npm start"
