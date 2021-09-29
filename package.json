@@ -1,0 +1,43 @@
+{
+  "name": "cicd-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js",
+    "start": "node ./server/server.js",
+    "test": "NODE_ENV=test jest",
+    "dev:hot": "NODE_ENV=development nodemon ./server/server.js & webpack-dev-server --open --hot --inline --progress --colors --watch --content-base ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keflynn/cicd-demo.git"
+  },
+  "author": "Kelsey Flynn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keflynn/cicd-demo/issues"
+  },
+  "homepage": "https://github.com/keflynn/cicd-demo#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.3.0",
+    "cssloader": "^1.1.1",
+    "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.2.4",
+    "nodemon": "^2.0.13",
+    "react-hot-loader": "^4.13.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.55.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0",
+    "webpack-hot-middleware": "^2.25.1"
+  }
+}
