@@ -19,10 +19,6 @@
     "url": "https://github.com/keflynn/cicd-demo/issues"
   },
   "homepage": "https://github.com/keflynn/cicd-demo#readme",
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
@@ -30,6 +26,7 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^6.3.0",
     "cssloader": "^1.1.1",
+    "enzyme-adapter-react-16": "^1.15.6",
     "html-webpack-plugin": "^5.3.2",
     "jest": "^27.2.4",
     "nodemon": "^2.0.13",
@@ -39,5 +36,8 @@
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.3.0",
     "webpack-hot-middleware": "^2.25.1"
+  },
+  "dependencies": {
+    "react-dom": "^16.14.0"
   }
 }
